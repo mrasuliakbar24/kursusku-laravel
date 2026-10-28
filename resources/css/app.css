@@ -1,0 +1,400 @@
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Palet warna Kurumi Tokisaki */
+:root {
+    --kurumi-maroon: #641e2b;
+    --kurumi-black: #171316;
+    --kurumi-red: #8f263d;
+    --kurumi-brown: #70483f;
+    --kurumi-ivory: #f4e9e6;
+    --kurumi-rose: #d8a5ac;
+    --kurumi-text: #24191d;
+    --kurumi-muted: #76636a;
+    --kurumi-border: #e3c8cd;
+}
+
+/* Tampilan dasar */
+body {
+    background: linear-gradient(
+        135deg,
+        #f4e9e6 0%,
+        #ead5d8 55%,
+        #dfbfc5 100%
+    );
+    color: var(--kurumi-text);
+    min-height: 100vh;
+}
+
+/* Brand navbar */
+.navbar-brand {
+    font-weight: 800;
+    color: var(--kurumi-maroon);
+    letter-spacing: 0.04em;
+}
+
+.navbar-brand:hover {
+    color: var(--kurumi-red);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--kurumi-black);
+}
+
+.navbar .nav-link {
+    color: var(--kurumi-ivory);
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--kurumi-rose);
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(
+        135deg,
+        #641e2b 0%,
+        #3a1b24 55%,
+        #171316 100%
+    );
+    color: #fff;
+    border: 1px solid rgba(216, 165, 172, 0.35);
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    box-shadow: 0 10px 30px rgba(23, 19, 22, 0.18);
+}
+
+.hero h1,
+.hero h2,
+.hero h3 {
+    color: #fff;
+}
+
+.hero p {
+    color: #f4e9e6;
+}
+
+/* Tombol utama */
+.btn-primary {
+    background-color: var(--kurumi-maroon);
+    border-color: var(--kurumi-maroon);
+    color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--kurumi-red);
+    border-color: var(--kurumi-red);
+    color: #fff;
+}
+
+.btn-outline-primary {
+    color: var(--kurumi-maroon);
+    border-color: var(--kurumi-maroon);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--kurumi-maroon);
+    border-color: var(--kurumi-maroon);
+    color: #fff;
+}
+
+/* Kartu fitur */
+.feature-card {
+    background: #fffaf9;
+    color: var(--kurumi-text);
+    border: 1px solid var(--kurumi-border);
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(100, 30, 43, 0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(100, 30, 43, 0.16);
+}
+
+.feature-card h3,
+.feature-card h4,
+.feature-card h5 {
+    color: var(--kurumi-maroon);
+}
+
+.feature-card p {
+    color: var(--kurumi-muted);
+}
+
+/* Heading dan link */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--kurumi-maroon);
+}
+
+a {
+    color: var(--kurumi-red);
+}
+
+a:hover {
+    color: var(--kurumi-brown);
+}
+
+/* Form */
+.form-control,
+.form-select {
+    border-color: var(--kurumi-border);
+    border-radius: 0.5rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--kurumi-red);
+    box-shadow: 0 0 0 0.2rem rgba(143, 38, 61, 0.15);
+}
+
+/* Footer */
+footer {
+    background-color: var(--kurumi-black);
+    color: var(--kurumi-ivory);
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--kurumi-rose);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 1.25rem;
+    }
+}
+
+/* ===== NAVBAR KURSUSKU: TEMA TOKISAKI KURUMI ===== */
+
+.bg-kursusku {
+    background: linear-gradient(110deg, #171316, #401721, #641e2b);
+    border-bottom: 2px solid #8f263d;
+}
+
+.navbar-brand {
+    color: #f4e9e6 !important;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+}
+
+.logo-kursusku {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #8f263d, #641e2b);
+    border: 1px solid #d8a5ac;
+    color: #ffffff;
+    font-weight: 800;
+    box-shadow: 0 3px 10px rgba(143, 38, 61, 0.35);
+}
+
+.text-merah {
+    color: #d8a5ac;
+}
+
+.bg-kursusku .nav-link {
+    color: #eadadd;
+    font-weight: 500;
+    padding: 10px 14px !important;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.bg-kursusku .nav-link:hover,
+.bg-kursusku .nav-link.active {
+    color: #ffffff;
+    background-color: rgba(143, 38, 61, 0.55);
+}
+
+.btn-daftar-kursus {
+    background: linear-gradient(135deg, #8f263d, #641e2b);
+    color: #ffffff;
+    border: 1px solid #d8a5ac;
+    border-radius: 8px;
+    padding: 9px 17px;
+    font-weight: 600;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-daftar-kursus:hover {
+    background: #a8324b;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.bg-kursusku .navbar-toggler {
+    border-color: #d8a5ac;
+}
+
+.bg-kursusku .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(216, 165, 172, 0.25);
+}
+
+@media (max-width: 991.98px) {
+    .bg-kursusku .navbar-nav {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .bg-kursusku .nav-link {
+        margin-bottom: 4px;
+    }
+}
+
+/* ===== HALAMAN BERANDA KURSUSKU ===== */
+
+.hero-kurumi {
+    position: relative;
+    overflow: hidden;
+    padding: 3.5rem 2.5rem;
+    border: 1px solid #70483f;
+    border-radius: 22px;
+    background: linear-gradient(125deg, #171316 0%, #401721 58%, #641e2b 100%);
+    box-shadow: 0 15px 35px rgba(23, 19, 22, 0.14);
+}
+
+.text-rose {
+    color: #e2a5b0;
+}
+
+.badge-kurumi {
+    background: rgba(143, 38, 61, 0.45);
+    border: 1px solid #b65a70;
+    color: #f4e9e6;
+    padding: 9px 13px;
+    letter-spacing: 1px;
+    white-space: normal;
+}
+
+.hero-decoration {
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(216, 165, 172, 0.4);
+    border-radius: 20px;
+    background: rgba(23, 19, 22, 0.35);
+}
+
+.hero-letter {
+    font-size: 100px;
+    line-height: 1.1;
+    font-weight: 900;
+    color: #f4e9e6;
+    text-shadow: 5px 5px 0 #8f263d;
+}
+
+.feature-card,
+.course-card {
+    border: 1px solid #eadadd;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 5px 18px rgba(23, 19, 22, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover,
+.course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(100, 30, 43, 0.12);
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #f4e9e6;
+    color: #8f263d;
+    font-weight: 800;
+}
+
+.section-eyebrow {
+    color: #8f263d;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.course-card {
+    overflow: hidden;
+}
+
+.course-card-top {
+    padding: 28px 20px;
+    background: linear-gradient(120deg, #171316, #641e2b);
+    color: #f4e9e6;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.course-label {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: #f4e9e6;
+    color: #8f263d;
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+.course-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+    border-top: 1px solid #eadadd;
+    color: #8f263d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.course-link:hover {
+    color: #641e2b;
+}
+
+.btn-outline-kurumi {
+    color: #641e2b;
+    border: 1px solid #8f263d;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-outline-kurumi:hover {
+    color: #ffffff;
+    background: #641e2b;
+}
+
+@media (max-width: 767.98px) {
+    .hero-kurumi {
+        padding: 2rem 1.25rem;
+    }
+
+    .hero-decoration {
+        min-height: 180px;
+    }
+
+    .hero-letter {
+        font-size: 75px;
+    }
+}
