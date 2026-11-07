@@ -1,0 +1,155 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+    /* Palet Tokisaki Kurumi */
+    --kursusku-primary: #8B1E3F;
+    --kursusku-primary-dark: #4A1026;
+    --kursusku-accent: #C2184B;
+    --kursusku-soft: #FFF0F3;
+    --kursusku-cream: #FFF8F0;
+    --kursusku-ink: #24151B;
+
+    --kursusku-border: #EBD5DC;
+    --kursusku-muted: #786773;
+}
+
+body {
+    background: var(--kursusku-cream);
+    color: var(--kursusku-ink);
+}
+
+/* Navbar, header, dan elemen dengan latar utama */
+.bg-kursusku {
+    background: linear-gradient(
+        135deg,
+        var(--kursusku-primary-dark),
+        var(--kursusku-primary)
+    );
+}
+
+/* Tombol Bootstrap */
+.btn-primary {
+    --bs-btn-bg: var(--kursusku-primary);
+    --bs-btn-border-color: var(--kursusku-primary);
+    --bs-btn-hover-bg: var(--kursusku-primary-dark);
+    --bs-btn-hover-border-color: var(--kursusku-primary-dark);
+    --bs-btn-active-bg: var(--kursusku-primary-dark);
+    --bs-btn-active-border-color: var(--kursusku-primary-dark);
+    --bs-btn-disabled-bg: var(--kursusku-primary);
+    --bs-btn-disabled-border-color: var(--kursusku-primary);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--kursusku-primary);
+    --bs-btn-border-color: var(--kursusku-primary);
+    --bs-btn-hover-bg: var(--kursusku-primary);
+    --bs-btn-hover-border-color: var(--kursusku-primary);
+    --bs-btn-active-bg: var(--kursusku-primary-dark);
+    --bs-btn-active-border-color: var(--kursusku-primary-dark);
+}
+
+/* Panel hero */
+.hero-panel {
+    background: linear-gradient(
+        135deg,
+        #FFFFFF,
+        var(--kursusku-soft)
+    );
+    border: 1px solid var(--kursusku-border);
+    border-radius: 1.25rem;
+    box-shadow: 0 1rem 2.5rem rgba(74, 16, 38, 0.10);
+}
+
+.hero-image {
+    min-height: 340px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Label kecil di atas judul */
+.eyebrow {
+    color: var(--kursusku-accent);
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+/* Kartu statistik */
+.stat-card {
+    min-height: 128px;
+    background: #FFFFFF;
+    border: 1px solid var(--kursusku-border);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1.5rem rgba(74, 16, 38, .06);
+}
+
+.stat-card span {
+    color: var(--kursusku-muted);
+    font-size: .9rem;
+}
+
+.stat-card strong {
+    color: var(--kursusku-primary-dark);
+    font-size: 2rem;
+}
+
+/* Kartu umum */
+.card {
+    border-radius: 1rem;
+    border-color: var(--kursusku-border);
+}
+
+/* Header tabel */
+.table thead th {
+    white-space: nowrap;
+    color: var(--kursusku-primary-dark);
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+/* Detail informasi */
+.detail-list dt,
+.detail-list dd {
+    padding-top: .65rem;
+    padding-bottom: .65rem;
+    border-bottom: 1px solid #F1E3E8;
+}
+
+/* Pagination */
+.pagination {
+    margin-bottom: 0;
+}
+
+.pagination .page-link {
+    color: var(--kursusku-primary);
+    border-color: var(--kursusku-border);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--kursusku-primary);
+    border-color: var(--kursusku-primary);
+    color: #FFFFFF;
+}
+
+/* Status AJAX */
+#ajax-status:not(:empty) {
+    padding: .35rem 0;
+}
+
+/* Tampilan kode */
+code {
+    color: var(--kursusku-accent);
+}
+
+/* Responsif untuk tablet dan ponsel */
+@media (max-width: 991.98px) {
+    .hero-image {
+        min-height: 240px;
+    }
+}
